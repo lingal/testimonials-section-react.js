@@ -1,0 +1,17 @@
+.graduate {
+  display: flex;
+  gap: 1rem;
+}
+
+.graduate-img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.graduate-img img{
+  border-radius: 50%;
+}
+
+.graduate-name p{
+  opacity: 0.5;
+}

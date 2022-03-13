@@ -1,0 +1,60 @@
+.card {
+  padding: 1.25rem 2rem 2rem 2rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.card:nth-child(1) {
+  grid-area: a;
+  background: var(--moderateViolet) url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 1.5rem;
+}
+
+@media screen and (min-width: 71em){
+  .card:nth-child(1) {
+    background-position: top right 5rem;
+  }
+}
+.card:nth-child(2) {
+  grid-area: b;
+  background-color: var(--grayishBlue);
+}
+.card:nth-child(3) {
+  grid-area: c;
+  background-color: var(--white);
+  box-shadow: 33px 53px 32px -24px var(--lightGray);
+}
+.card:nth-child(4) {
+  grid-area: d;
+  background-color: var(--blackishBlue);
+}
+.card:nth-child(5) {
+  grid-area: e;
+  background-color: var(--white);
+  box-shadow: 33px 53px 32px -24px var(--lightGray);
+}
+
+.card:nth-child(1) .graduate .graduate-img,
+.card:nth-child(4) .graduate .graduate-img {
+  border: 2px solid #a775f2;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+.card > * {
+  color: var(--lightGrayishBlue);
+}
+
+.card:nth-child(3) > *,
+.card:nth-child(5) > * {
+  color: var(--grayishBlue);
+}
+
+.card-quote {
+  opacity: 0.7;
+}
